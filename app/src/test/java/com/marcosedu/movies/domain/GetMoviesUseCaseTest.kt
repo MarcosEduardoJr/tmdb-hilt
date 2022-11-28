@@ -1,22 +1,13 @@
 package com.marcosedu.movies.domain
 
 import com.marcosedu.movies.data.DiscoveryRepository
-import com.marcosedu.movies.data.DiscoveryRepositoryImpl
-import com.marcosedu.movies.data.api.DiscoverAPI
-import com.marcosedu.movies.data.exception.DiscoveryRepositoryException
-import com.marcosedu.movies.data.model.BasePaginationRemote
-import com.marcosedu.movies.data.model.BasePaginationRemoteDummy
-import com.marcosedu.movies.data.model.MovieRemoteDummy
 import com.marcosedu.movies.domain.model.MovieDummy
-import io.mockk.MockKAnnotations
 import io.mockk.coEvery
 import io.mockk.mockk
-import io.mockk.impl.annotations.MockK
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
-import java.lang.Exception
 
 class GetMoviesUseCaseTest {
 
@@ -25,7 +16,7 @@ class GetMoviesUseCaseTest {
     private val repository = mockk<DiscoveryRepository>()
 
     @Before
-    fun setup(){
+    fun setup() {
         getMoviesUseCase = GetMoviesUseCase(repository)
     }
 

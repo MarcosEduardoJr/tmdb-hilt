@@ -1,7 +1,7 @@
 package com.marcosedu.movies.presenter
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.marcosedu.movies.R
 import dagger.hilt.android.AndroidEntryPoint
 
