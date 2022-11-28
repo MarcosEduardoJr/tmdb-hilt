@@ -5,5 +5,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "DebugFlix"
+rootProject.name = "movies"
 include ':app'
